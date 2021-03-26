@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: EpicUtilites/EpicUtilites.csproj restore
+      run: EpicUtilites restore
     - name: Build
-      run: EpicUtilites/EpicUtilites.csproj build --no-restore
+      run: EpicUtilites build --no-restore
     - name: Test
-      run: EpicUtilites/EpicUtilites.csproj test --no-build --verbosity normal
+      run: EpicUtilites test --no-build --verbosity normal
