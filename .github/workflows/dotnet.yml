@@ -19,13 +19,14 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-        
-    # - name: echo dir
-    #   run : cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
+      
       
     - name: Restore dependencies
       run: cd EpicUtilites ; nuget restore -PackagesDirectory D:\a\EpicUtilites\EpicUtilites\packages
 
+
+    - name: echo dir
+      run: cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
       
     - name: Build
       run: cd EpicUtilites ; dotnet build --no-restore
