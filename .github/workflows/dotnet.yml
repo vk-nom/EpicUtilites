@@ -20,10 +20,10 @@ jobs:
       with:
         dotnet-version: 5.0.x
         
-    - name: echoing
-      run: dir | % { $_.FullName -replace "C:\\","" }
+    - name: echo dir
+      run : cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
       
-    - name: Restore dependencies
+    - name: Restore depende47ncies
       run: nuget restore
       
     - name: Build
