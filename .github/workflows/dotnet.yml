@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 5.0.x
         
     - name: echoing
-      run: echo yo
+      run: dir /s /b /o:gn
       
     - name: Restore dependencies
       run: nuget restore
