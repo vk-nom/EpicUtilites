@@ -24,7 +24,7 @@ jobs:
       run : cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
       
     - name: Restore depende47ncies
-      run: cd EpicUtilites ; nuget restore -PackagesDirectory=D:\a\EpicUtilites\EpicUtilites\EpicUtilites\packages
+      run: cd EpicUtilites ; nuget restore -PackagesDirectory D:\a\EpicUtilites\EpicUtilites\EpicUtilites\packages
 
       
     - name: Build
