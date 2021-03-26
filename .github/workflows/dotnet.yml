@@ -20,14 +20,16 @@ jobs:
       with:
         dotnet-version: 5.0.x
         
-    - name: echo dir
-      run : cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
+    # - name: echo dir
+    #   run : cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
       
-    - name: Restore depende47ncies
+    - name: Restore dependencies
       run: cd EpicUtilites ; nuget restore -PackagesDirectory D:\a\EpicUtilites\EpicUtilites\EpicUtilites\packages
 
       
     - name: Build
-      run: EpicUtilites build --no-restore
+      run: cd EpicUtilites ; EpicUtilites build --no-restore
+      
+      
     - name: Test
       run: EpicUtilites test --no-build --verbosity normal
