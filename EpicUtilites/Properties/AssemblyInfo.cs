@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Auth")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("EpicUtilites")]
+[assembly: AssemblyDescription("A .NET Library to interact with Epic Api")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Auth")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyProduct("EpicUtilites")]
+[assembly: AssemblyCopyright("Copyright BeatYT ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
