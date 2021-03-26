@@ -24,7 +24,7 @@ jobs:
       run : cd EpicUtilites ; dir | % { $_.FullName -replace "C:\\","" }
       
     - name: Restore depende47ncies
-      run: nuget restore
+      run: cd EpicUtilites ; nuget restore
       
     - name: Build
       run: EpicUtilites build --no-restore
